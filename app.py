@@ -7,16 +7,16 @@ from models.expense import Expense
 app=Flask(__name__)
 
 salary=[
-    Salary('Amazon',12500)
+    Salary('Amazon',13000)
 ]
 
 transaction=[
-    Transaction('imposto direto', 1250,'governo')
+    Transaction('imposto direto', 1300,'governo')
 ]
 
 investment=[
-    Investment('CDB', 78946,2200),
-    Investment('BTC', 43245,860),
+    Investment('CDB', 78946,1300),
+    Investment('BTC', 43245,460),
     Investment('Tesouro Direto', 6297,150),
     Investment('Bolsa Americana', 16896, 560)
 ]
@@ -35,7 +35,9 @@ expense=[
     Expense('Streaming',100,'entreterimento'),
     Expense('Cartao de Credito',1720,'lazer'),
     Expense('Cachorro',250,'pet'),
-    Expense('Viagem',1200,'lazer')
+    Expense('Viagem',1200,'lazer'),
+    Expense('Namorada', 300,'relacionamento'),
+    Expense('Video Game',200,'entreterimento')
 ]
 
 def total_salary():
